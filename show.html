@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>movie</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+</head>
+
+<body style="background-color: #D6EAF8 ; text-align:center;">
+    <header></header>
+    <main>
+        <section>
+            <h2>RECOMMENDED MOVIES</h2>
+
+            <div class="row">
+                <div class="column">
+                    <p><a href="/movie1/{{res1[0]}}">1.{{res1[0]}}</a></p>
+                    <img src="{{poster[0]}}" alt="Image1",width="500" height="333">
+                </div>
+
+
+                <div class="column">
+                    <p><a href="/movie2/{{res1[1]}}">2.{{res1[1]}}</a></p>
+                    <img src="{{poster[1]}}" alt="Image2",width="500" height="333">
+                </div>
+
+                <div class="column">
+                    <p><a href="/movie3/{{res1[2]}}">3.{{res1[2]}}</a></p>
+                    <img src="{{poster[2]}}" alt="Image3",width="500" height="333">
+                </div>
+
+                <div class="column">
+                    <p><a href="/movie4/{{res1[3]}}">4.{{res1[3]}}</a></p>
+                    <img src="{{poster[3]}}" alt="Image4",width="500" height="333">
+                </div>
+
+                <div class="column">
+                    <p><a href="/movie5/{{res1[4]}}">5.{{res1[4]}}</a></p>
+                    <img src="{{poster[4]}}" alt="Image5",width="500" height="333">
+                </div>
+            </div>
+
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

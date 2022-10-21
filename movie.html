@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+</head>
+
+<body style="background-color: #D6EAF8 ; text-align:center;">
+    <header></header>
+    <main>
+        <section>
+            <div style="font-size:200%;">
+                <h1>MOVIE</h1>
+                <h1>RECOMMENDATION</h1>
+                <h1>SYSTEM</h1>
+            </div>
+            
+            <div>
+                <h2 style="font-family:verdana;">--CHOOSE YOUR MOVIE--</h2>
+            </div>
+            <div>
+                <form action="/action" method="post">
+                <label style="font-family:verdana;">Previous Movie Name:</label>
+                <select name="movie" id="movie">
+                    {% for i in res %}
+                    <option value="{{i}}">{{i}}</option>
+                    {% endfor %}
+                    <input type="submit" value="Recommend">
+                </select>
+            </div>
+
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
